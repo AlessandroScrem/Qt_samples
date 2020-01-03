@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/files">
+        <file>images/add.png</file>
+        <file>images/stop.png</file>
+        <file>images/warning.png</file>
+    </qresource>
+</RCC>
