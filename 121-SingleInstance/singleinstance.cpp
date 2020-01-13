@@ -2,6 +2,7 @@
 
 SingleInstance::SingleInstance(QObject *parent) : QObject(parent)
 {
+
     // old style connection
     //connect(&mServer, SIGNAL(newConnection()), this, SLOT(newConnection()) );
     connect(&mServer, &QLocalServer::newConnection, this, &SingleInstance::newConnection);
@@ -9,6 +10,7 @@ SingleInstance::SingleInstance(QObject *parent) : QObject(parent)
 
 SingleInstance::~SingleInstance()
 {
+    qDebug() << "CLOSED!!";
     mServer.close();
 }
 
